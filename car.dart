@@ -8,7 +8,13 @@ class Car {
   Car(this.model, this.seats);
 
   void sitPassenger(Human passenger) {
-    seatedPassengers.add(passenger);
+    String limit = "Too many passengers. No can do.";
+
+    if (seatedPassengers.length < this.seats) {
+      seatedPassengers.add(passenger);
+    } else {
+      print(limit);
+    }
   }
 
 

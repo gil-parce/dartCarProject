@@ -15,5 +15,6 @@ void main() {
   print("The human known as ${human2.name} is ${human2.age} years old.");
 
   car1.sitPassenger(human1);
+  car1.sitPassenger(human1);
   print(car1);
 }
