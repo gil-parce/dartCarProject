@@ -11,9 +11,9 @@ var car2 = Car('Fiat', 2);
 var car3 = Car('Mercedes', 3);
 
 void main() {
-  print(car1.seats);
-  print(human2.age);
+  print("${car1.model} has ${car1.seats} places available.");
+  print("The human known as ${human2.name} is ${human2.age} years old.");
 
-  car1.sitPassenger(human2);
+  car1.sitPassenger(human1);
   print(car1);
 }

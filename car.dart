@@ -1,16 +1,26 @@
+import 'human.dart';
+
 class Car {
   String model;
   int seats;
-  Set<String> seatedPassengers = {};
+  List<Human> seatedPassengers = [];
 
   Car(this.model, this.seats);
 
-  void sitPassenger(var passenger) {
-    for (var seatedPassenger in seatedPassengers) {
-      seatedPassengers.add(passenger);
-    }
+  void sitPassenger(Human passenger) {
+    seatedPassengers.add(passenger);
   }
+
 
   dynamic getPassenger() => this.seatedPassengers;
 
+  String toString() {
+    var carInfo = "The ${this.model} fits ${this.seats}. ";
+    
+    seatedPassengers.forEach((seatedPassenger) {
+       carInfo = carInfo + seatedPassenger.toString();
+    });
+    return carInfo;
+  }
+  
 }

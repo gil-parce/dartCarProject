@@ -4,8 +4,8 @@ class Human {
 
  Human(this.name, this.age);
 
- humanString() {
-  return "Occupant: $name.";
+ String toString() {
+  return "Occupant: $name. ";
  }
 
 }
