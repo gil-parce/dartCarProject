@@ -12,4 +12,8 @@ var car3 = Car('Mercedes', 3);
 
 void main() {
   print(car1.seats);
+  print(human2.age);
+
+  car1.sitPassenger(human2);
+  print(car1);
 }

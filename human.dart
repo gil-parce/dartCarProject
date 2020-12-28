@@ -4,4 +4,8 @@ class Human {
 
  Human(this.name, this.age);
 
+ humanString() {
+  return "Occupant: $name.";
+ }
+
 }
