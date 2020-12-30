@@ -5,7 +5,7 @@ class Human {
  Human(this.name, this.age);
 
  String toString() {
-  return "Occupant: $name. ";
+  return "$name. ";
  }
 
 }
